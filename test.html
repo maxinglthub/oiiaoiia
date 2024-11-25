@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Made By rMaxxHuang
+    love u
+    peace
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oiiaoiia</title>
+
+    <script>
+        window.onload = function meme() {
+            const playButton = document.getElementById("play-music");
+            const audio = document.getElementById("cat");
+
+            playButton.addEventListener("mousedown", () => {
+                audio.play();
+            });
+
+            playButton.addEventListener("mouseup", () => {
+                audio.pause();
+                audio.currentTime = 0; // 從頭播放
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Edit By rMaxxHuang</h1>
+        <button id="play-music">OIIAOIIA</button>
+        <audio id="cat" src="cat.MP3"></audio>
+    </center>
+</body>
+
+</html>

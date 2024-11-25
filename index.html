@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Made By rMaxxHuang
+    love u
+    peace
+-->
+
+<!--
+    References:
+        Gif,IMG:https://tenor.com/zh-TW/view/oiia-oiiaoiia-oiia-oiia-cat-gif-13397875673260883779
+        MP3:https://youtu.be/ZHgyQGoeaB0?si=GVrjZEGN0WBZ2gDB
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oiiaoiia</title>
+
+    <script>
+        window.onload = function meme() {
+            var playmusic = document.getElementById("play-music");
+            var catmp3 = document.getElementById("cat");
+            var playcat = document.getElementById("gifcat");
+            var alreadlyclick = false;
+            var backgroundchanging = document.getElementById("backgroundchange");
+
+            playmusic.addEventListener ("mousedown", () => {
+                //playcat.style.display = "inline";
+                catmp3.play();
+
+                if (event.button == 0) {
+                    if (alreadlyclick) {
+                        backgroundchanging.style.backgroundImage = "url(catvdo.gif)";
+                        alreadlyclick = false;
+                    } else {
+                        backgroundchanging.style.backgroundImage = "url(catjpg.png)";
+                        alreadlyclick = true;
+                    }
+                }
+            });
+
+            playmusic.addEventListener("mouseup", () => {
+               // playcat.style.visibility = "none";
+                catmp3.pause();
+                catmp3.currentTime = 0;
+                
+            });
+
+            
+
+        }
+
+    </script>
+</head>
+
+<body style="background-image: url(catjpg.png);">
+    <center>
+
+        <div id="backgroundchange"><img id="gifcat" src="catvdo.gif"></img></div>
+        </br>
+
+        <audio id="cat" src="cat.MP3" loop></audio>
+
+        <a href="https://github.com/maxinglthub"; target="_blank";>
+            <button>Visit GitHub</button>
+        </a><br/>
+        <p>Edit By rMaxxHuang</p>
+        <p>F12 to see references</p>
+    </center>
+
+</body>
+            
+</html>
